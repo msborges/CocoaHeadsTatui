@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="exemplo_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cav-ya-eA3">
+                                <rect key="frame" x="164" y="227" width="273" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="273" id="7oy-ih-D3o"/>
+                                    <constraint firstAttribute="height" constant="21" id="Qkb-Wb-B7a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWt-Xa-3E9">
+                                <rect key="frame" x="207" y="320" width="187" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="brN-UC-OIz"/>
+                                    <constraint firstAttribute="height" constant="30" id="qhR-KW-lhs"/>
+                                </constraints>
+                                <state key="normal" title="Open Transparent View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openTransparentView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NNX-2g-XeU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kS-Dv-4cx">
+                                <rect key="frame" x="250" y="256" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CDu-pv-rMn"/>
+                                    <constraint firstAttribute="height" constant="21" id="ahC-tT-hVE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.21656081177536479" blue="0.085938204554916034" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="kWt-Xa-3E9" secondAttribute="centerX" id="3ob-lt-Fc7"/>
+                            <constraint firstAttribute="centerY" secondItem="cav-ya-eA3" secondAttribute="centerY" constant="62.5" id="72A-eV-mun"/>
+                            <constraint firstAttribute="centerX" secondItem="cav-ya-eA3" secondAttribute="centerX" id="JBr-pw-RQE"/>
+                            <constraint firstAttribute="centerX" secondItem="9kS-Dv-4cx" secondAttribute="centerX" id="Jmr-vh-Uwn"/>
+                            <constraint firstAttribute="centerY" secondItem="9kS-Dv-4cx" secondAttribute="centerY" constant="33.5" id="WUq-0S-QMi"/>
+                            <constraint firstAttribute="centerY" secondItem="kWt-Xa-3E9" secondAttribute="centerY" constant="-35" id="eOL-Iz-Qbp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblNotification" destination="cav-ya-eA3" id="EcF-Og-Bmz"/>
+                        <outlet property="lblTypeNetworking" destination="9kS-Dv-4cx" id="nha-9l-6xm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
